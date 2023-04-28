@@ -11,7 +11,7 @@ function App() {
   const fetchBulletin = () => {
     fetch('https://nesine-case-study.onrender.com/bets ')
       .then((response) => response.json())
-      .then((data) => setBulletin(data.slice(0, 20)))
+      .then((data) => setBulletin(data.slice(0, 200)))
       .catch((error) => {
         setBulletin([]);
       });
