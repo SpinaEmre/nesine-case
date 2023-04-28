@@ -10,4 +10,5 @@
     max-height: 350px;
     overflow-y: scroll;
     border: 1px solid #333;
+    z-index: 1;
 }
