@@ -14,7 +14,7 @@ const Event = (props) => {
     };
 
     return (<>
-        <div key={props.eventItem.NID} className={classes.eventRow}>
+        <div key={props.eventItem.NID} className={classes.eventRow} style={props.newStyle}>
             <EventHeader event={headerEvent} />
             <EventOdds event={props.eventItem} />
         </div>

@@ -1,7 +1,7 @@
 export const EMPTY_EVENT_SCHEME = {
     "D": "Event",
-    "DAY": "Count",
-    "LN": "3000",
+    "DAY": "Count:",
+    "LN": "0",
     "OCG":
     {
         "1": {

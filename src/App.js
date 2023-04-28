@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import EventHeader from "./components/Bulletin/Event/EventHeader";
 import Bulletin from './components/Bulletin/Bulletin';
-import { EMPTY_EVENT_SCHEME } from "./assets/schemes";
 import CartProvider from './store/CartProvider';
 
 function App() {
@@ -11,7 +9,6 @@ function App() {
   const fetchBulletin = () => {
     fetch('https://nesine-case-study.onrender.com/bets ')
       .then((response) => response.json())
-      //.then((data) => setBulletin(data.slice(0, 200)))
       .then((data) => setBulletin(data))
       .catch((error) => {
         setBulletin([]);
@@ -32,11 +29,6 @@ function App() {
   return (
     <CartProvider>
       <div className="App">
-        <EventHeader
-          event={EMPTY_EVENT_SCHEME}
-          wrapWithEventContainer="true"
-          wrapperType="mainHeaderWrapper"
-        />
         <Bulletin
           bulletin={bulletin}
         />
