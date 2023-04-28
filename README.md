@@ -1,3 +1,15 @@
+This mini project was created as a case stufy for Nesine.com.
+As you can see; the starting point or the boiler plate creating tool was create-react-app.
+
+Please follow the instructions and you'll be viewing the Mini betting site, bulletin and cart implementation.
+
+Thanks. 
+
+Emre OZTUNC
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
