@@ -1,0 +1,16 @@
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.125s ease-in;
+}
+
+.clickable:hover {
+    background-color: lightgreen !important;
+}
+
+.selected {
+    background-color: yellow;
+}
+
+.selected:hover {
+    background-color: pink !important;
+}

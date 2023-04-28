@@ -1,0 +1,52 @@
+:root {
+    --cell-1-line-height: 1.5rem;
+    --cell-2-line-height: 2.5rem;
+    --cells-total-height: 4rem;
+    --cells-odd-column-width: 70px;
+    --cells-name-column-width: 350px;
+}
+
+.eventRow {
+    display: grid;
+    grid-template-columns: var(--cells-name-column-width) repeat(18, var(--cells-odd-column-width));
+    grid-template-rows: var(--cell-1-line-height) var(--cell-2-line-height);
+    justify-items: stretch;
+    align-items: stretch;
+    height: var(--cells-total-height);
+    max-height: var(--cells-total-height);
+}
+
+.mainHeaderWrapper {
+    grid-template-rows: var(--cells-total-height);
+    position: sticky;
+    top: 0;
+}
+
+.eventRow div {
+    display: grid;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    align-content: center;
+    overflow: hidden;
+}
+
+.eventRow div:nth-child(n+20) {
+    overflow: auto;
+}
+
+.eventRow div:nth-child(19n) {
+    border-right: 1px solid black;
+}
+
+.eventRow div:nth-child(19n+1) {
+    text-align: left;
+    padding-left: 10px;;
+}
+
+.eventRow:last-child div:nth-child(n+20) {
+    border-bottom: 1px solid black;
+}
+
+.mainHeaderWrapper div {
+    background-color: #d4c9cb !important;
+}
